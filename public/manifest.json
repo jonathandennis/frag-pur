@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fragment Pur",
+  "name": "The Fragment Pur Website",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +8,33 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "android-chrome-256x256.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "256x256"
+    },
+    {
+      "src": "mstile-150x150.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "safari-pinned-tab.svg",
+      "type": "image/svg",
+      "color": "#333333"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#333333",
   "background_color": "#ffffff"
 }
