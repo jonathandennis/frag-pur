@@ -1,0 +1,35 @@
+nav {
+    background-color: #666666;
+    height: 4.5rem;
+    width: 100%;
+    padding: .8rem;
+    overflow: hidden;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    transition: all .2s; 
+    font-family: 'Galvji', sans-serif;
+    font-size: 1.8rem;
+    color: #bcbcbc;
+    text-transform: uppercase;
+    list-style-type: none;
+    backface-visibility: hidden;
+    transition: all .3s;
+    /* display: flex; */
+}
+
+a, a:visited {
+    color: #bcbcbc;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #f9f7f6;
+    transform: scale(1.1);
+}

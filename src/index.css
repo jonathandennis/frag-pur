@@ -1,18 +1,38 @@
-body {
-  margin: 0;
-  box-sizing: border-box;
-    font-size: 62.5%; /* //1rem = 10px
-    // shrinks font size at 1200px
-    //@media only screen and (max-width: $bp-largest) {
-        //font-size: 50%;} */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #333333;
+    line-height: 1.6;   
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'Galvji';
+    src: url(./assets/fonts/Galvji.ttc);
+}
+
+@font-face {
+    font-family: 'Industry-Book';
+    src: url(./assets/fonts/Industry-Book.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(./assets/fonts/Helvetica.ttc);
 }
