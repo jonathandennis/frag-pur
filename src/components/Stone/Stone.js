@@ -7,128 +7,124 @@ const Stone = () => {
     return (
         <section className="stone__container">
           <div className="stone__nav">
-            <fieldset>
-              <legend className="stone__nav-head">Type</legend>
+            <h2 className="stone__nav-head">Type</h2>
               <div className="stone__nav-list">
-                <div className="stone__nav-var">
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="marbre"
                       name="type"
                       value="marbre"
-                  />
-                  <label for="marbre"> Marbre</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Marbre
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="granit"
                       name="type"
                       value="granit"
-                  />
-                  <label for="granit"> Granit</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Granit
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="onyx"
                       name="type"
                       value="onyx"
-                  />
-                  <label for="onyx"> Onyx</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Onyx
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="travertin"
                       name="type"
                       value="travertin"
-                  />
-                  <label for="travertin"> Travertin</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Travertin
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="quartz"
                       name="type"
                       value="quartz"
-                  />
-                  <label for="quartz"> Quartz</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Quartz
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="terrazzo"
                       name="type"
                       value="terrazzo"
-                  />
-                  <label for="terrazzo"> Terrazzo</label>
-                </div>
+                  />Terrazzo
+                  <span className="checkmark"></span>
+                </label>
               </div>
-            </fieldset>
-            <fieldset>
-              <legend className="stone__nav-head">Couleur</legend>
+            <h2 className="stone__nav-head">Couleur</h2>
               <div className="stone__nav-list">
-                <div className="stone__nav-var">
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="noir"
                       name="couleur"
                       value="noir"
-                  />
-                  <label for="noir"> Noir</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Noir
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="blanc"
                       name="couleur"
                       value="blanc"
-                  />
-                  <label for="blanc"> Blanc</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Blanc
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="gris"
                       name="couleur"
                       value="gris"
-                  />
-                  <label for="gris"> Gris</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Gris
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="beige"
                       name="couleur"
                       value="beige"
-                  />
-                  <label for="beige"> Beige</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Beige
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="rouge"
                       name="couleur"
                       value="rouge"
-                  />
-                  <label for="rouge"> Rouge</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Rouge
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="vert"
                       name="couleur"
                       value="vert"
-                  />
-                  <label for="vert"> Vert</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Vert
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="bleu"
                       name="couleur"
                       value="bleu"
-                  />
-                  <label for="bleu"> Bleu</label>
-                </div>
-                <div className="stone__nav-var">
+                  />Bleu
+                  <span className="checkmark"></span>
+                </label>
+                <label className="stone__nav-var">
                   <input type="checkbox"
                       id="multi"
                       name="couleur"
                       value="multi"
-                  />
-                  <label for="multi"> Multi</label>
-                </div>
+                  />Multi
+                  <span className="checkmark"></span>
+                </label>
               </div>
-            </fieldset>
           </div>
             <div className="stone__display">
                 <figure className="stone__card">
