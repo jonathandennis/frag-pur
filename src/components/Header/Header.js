@@ -1,14 +1,12 @@
 import React from 'react'
-import './header.css'
-
-import logoMain from '../../assets/img/FP-13.png'
+import './Header.css'
 
 const Header = () => {
 
     return (
             <header>
                   <div>
-                    <img src={logoMain} className="headerLogo" alt="Fragment Pur logo"/>
+                    <img src={`${process.env.PUBLIC_URL}/assets/img/FP-13.png`} className="headerLogo" alt="Fragment Pur logo"/>
                   </div>
             </header>
     )

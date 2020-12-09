@@ -1,13 +1,7 @@
-/* ////////   Custom Checkbox 1 ////////
-input[type="checkbox"] {
-    -webkit-appearance: none;
-    appearance: none;
-  } */
-
-.stone__container {
-    height: 95vh;
+.stone {
+    height: 85vh;
     width: 100%;
-    padding: 0;
+    padding: 0 5.3%;
     background-color: #333333;
     font-family: 'Galvji', sans-serif;
     color: #a6a3a3;

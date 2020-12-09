@@ -3,6 +3,8 @@ import Header from '../Header/Header'
 import NavBar from '../NavBar/NavBar'
 import About from '../About/About'
 import Stone from '../Stone/Stone'
+import Contact from '../Contact/Contact'
+
 import './App.css'
 
 const App = () => {
@@ -10,10 +12,11 @@ const App = () => {
 
   return (
     <div className="appContainer">
-      <NavBar />
       <Header />
+      <NavBar />
       <About />
       <Stone />
+      <Contact />
     </div>
   )
 }

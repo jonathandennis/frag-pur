@@ -1,18 +1,18 @@
-nav {
+.nav {
     background-color: #666666;
-    height: 4.5rem;
+    height: 6vh;
     width: 100%;
     padding: .8rem;
     overflow: hidden;
 }
 
-ul {
+.nav__list {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-li {
+.nav__item {
     transition: all .2s; 
     font-family: 'Galvji', sans-serif;
     font-size: 1.8rem;
@@ -21,15 +21,29 @@ li {
     list-style-type: none;
     backface-visibility: hidden;
     transition: all .3s;
-    /* display: flex; */
 }
 
-a, a:visited {
+.nav__link, .nav__link:visited {
     color: #bcbcbc;
     text-decoration: none;
 }
 
-a:hover, a:active {
+.nav__link:hover, .nav__link:active {
     color: #f9f7f6;
     transform: scale(1.1);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky + .about {
+    padding-top: 7.6%;
+}
+
+.sticky + .about + .stone {
+    padding-top: 2.5%;
 }

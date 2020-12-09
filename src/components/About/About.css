@@ -1,11 +1,11 @@
-section {
+.about {
     background-color: #333333;
-    height: 90vh;
+    height: 85vh;
     width: 100%;
-    padding: 5% 10%;
+    padding: 5% 10% 5% 10%;
 }
 
-h1 {
+.about__header {
     font-size: 3.4rem;
     font-weight: 100;
     font-family: 'Industry-Book', sans-serif;
@@ -18,7 +18,8 @@ span {
     color: #555555;
 }
 
-p {
+.about__text {
+    margin-bottom: 2rem;
     font-size: 1.8rem;
     font-weight: lighter;
     font-family: 'Helvetica', sans-serif;
