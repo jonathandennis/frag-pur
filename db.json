@@ -1,0 +1,48 @@
+{
+    "stones": [
+        {
+            "id": 1,
+            "important": true,
+            "name": "Bianco Sivec",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "`${process.env.PUBLIC_URL}/assets/img/stone/BiancoSivec1.jpg`"
+        },
+        {
+            "id": 2,
+            "important": true,
+            "name": "Imperial White",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "`${process.env.PUBLIC_URL}/assets/img/stone/ImperialWhite1.jpg`"
+        },
+        {
+            "id": 3,
+            "important": true,
+            "name": "Fantasy White",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "`${process.env.PUBLIC_URL}/assets/img/stone/FantasyWhite1.jpg`"
+        },
+        {
+            "id": 4,
+            "important": true,
+            "name": "Infinito",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "`${process.env.PUBLIC_URL}/assets/img/stone/Infinito1.jpg`"
+        }
+    ]
+}
