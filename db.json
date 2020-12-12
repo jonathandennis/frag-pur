@@ -9,7 +9,7 @@
             "origin": "Macédoine",
             "finish": "Poli",
             "thickness": "3cm, 2cm",
-            "image": "`${process.env.PUBLIC_URL}/assets/img/stone/BiancoSivec1.jpg`"
+            "image": "assets/img/stone/BiancoSivec1.jpg"
         },
         {
             "id": 2,
@@ -20,7 +20,7 @@
             "origin": "Macédoine",
             "finish": "Poli",
             "thickness": "3cm, 2cm",
-            "image": "`${process.env.PUBLIC_URL}/assets/img/stone/ImperialWhite1.jpg`"
+            "image": "assets/img/stone/ImperialWhite1.jpg"
         },
         {
             "id": 3,
@@ -31,7 +31,7 @@
             "origin": "Macédoine",
             "finish": "Poli",
             "thickness": "3cm, 2cm",
-            "image": "`${process.env.PUBLIC_URL}/assets/img/stone/FantasyWhite1.jpg`"
+            "image": "assets/img/stone/FantasyWhite1.jpg"
         },
         {
             "id": 4,
@@ -42,7 +42,29 @@
             "origin": "Macédoine",
             "finish": "Poli",
             "thickness": "3cm, 2cm",
-            "image": "`${process.env.PUBLIC_URL}/assets/img/stone/Infinito1.jpg`"
+            "image": "assets/img/stone/Infinito1.jpg"
+        },
+        {
+            "id": 5,
+            "important": true,
+            "name": "Fantasy Gold",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/FatasyGold1.jpg"
+        },
+        {
+            "id": 6,
+            "important": true,
+            "name": "Labareda",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/Labareda1.jpg"
         }
     ]
 }

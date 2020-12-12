@@ -1,0 +1,19 @@
+.stone {
+    height: 85vh;
+    width: 100%;
+    padding: 0 5.3%;
+    background-color: #333333;
+    font-family: 'Galvji', sans-serif;
+    color: #a6a3a3;
+    text-transform: uppercase;
+
+    display: flex;
+}
+
+.stone__display {
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../Stone/Stone.css'
+import './StoneFilter.css'
 
 const StoneFilter = () => {
 

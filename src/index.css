@@ -23,6 +23,11 @@ body {
 }
 
 @font-face {
+    font-family: 'Helvetica';
+    src: url(./assets/fonts/Helvetica.ttc);
+}
+
+@font-face {
     font-family: 'Galvji';
     src: url(./assets/fonts/Galvji.ttc);
 }
@@ -30,9 +35,4 @@ body {
 @font-face {
     font-family: 'Industry-Book';
     src: url(./assets/fonts/Industry-Book.ttf);
-}
-
-@font-face {
-    font-family: 'Helvetica';
-    src: url(./assets/fonts/Helvetica.ttc);
 }

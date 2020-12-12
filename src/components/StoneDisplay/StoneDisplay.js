@@ -2,14 +2,22 @@ import React from 'react'
 import StoneFilter from '../StoneFilter/StoneFilter'
 import Stone from '../Stone/Stone'
 
-import '../Stone/Stone.css'
+import './StoneDisplay.css'
 
 const StoneDisplay = ({ stones }) => {
+    console.log('stones in StoneDisplay: ', stones);
   
     return (
         <section className="stone">
-          <StoneFilter />,
-          <Stone stones={stones} />
+          <StoneFilter />
+          <div className="stone__display">
+            {stones.map((stone) =>
+              <Stone
+              key={stone.id}
+              stone={stone}
+              />
+            )}
+          </div>
         </section>
     )
 }
