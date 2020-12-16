@@ -10,10 +10,13 @@
     display: flex;
 }
 
-.stone__display {
+.stone__carousel {
     width: 80%;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
+    grid-auto-flow: column;
+    grid-gap: 2%;
+    /* justify-content: space-between; */
+    overflow: scroll;
+
 }

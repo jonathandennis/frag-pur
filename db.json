@@ -49,7 +49,7 @@
             "important": true,
             "name": "Fantasy Gold",
             "type": "Marbre",
-            "color": "Blanc",
+            "color": "Beige",
             "origin": "Macédoine",
             "finish": "Poli",
             "thickness": "3cm, 2cm",
@@ -59,12 +59,78 @@
             "id": 6,
             "important": true,
             "name": "Labareda",
-            "type": "Marbre",
-            "color": "Blanc",
+            "type": "Quartz",
+            "color": "Multi",
             "origin": "Macédoine",
             "finish": "Poli",
             "thickness": "3cm, 2cm",
             "image": "assets/img/stone/Labareda1.jpg"
+        },
+        {
+            "id": 7,
+            "important": true,
+            "name": "Honey Blue",
+            "type": "Granit",
+            "color": "Bleu",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/HoneyBlue1.jpg"
+        },
+        {
+            "id": 8,
+            "important": true,
+            "name": "Black Taurus",
+            "type": "Granit",
+            "color": "Noir",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/BlackTaurus1.jpg"
+        },
+        {
+            "id": 9,
+            "important": true,
+            "name": "Lavender",
+            "type": "Onyx",
+            "color": "Bleu",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/Lavender1.jpg"
+        },
+        {
+            "id": 10,
+            "important": true,
+            "name": "Mercury Black",
+            "type": "Travertin",
+            "color": "Noir",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/MercuryBlack1.jpg"
+        },
+        {
+            "id": 11,
+            "important": true,
+            "name": "Mount Ranier",
+            "type": "Quartz",
+            "color": "Beige",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/MountRanier1.jpg"
+        },
+        {
+            "id": 12,
+            "important": true,
+            "name": "Red Multicolor",
+            "type": "Travertin",
+            "color": "Rouge",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/RedMulticolor1.jpg"
         }
     ]
 }

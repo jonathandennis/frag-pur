@@ -10,7 +10,7 @@ const StoneDisplay = ({ stones }) => {
     return (
         <section className="stone">
           <StoneFilter />
-          <div className="stone__display">
+          <div className="stone__carousel">
             {stones.map((stone) =>
               <Stone
               key={stone.id}
