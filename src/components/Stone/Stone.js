@@ -3,7 +3,7 @@ import React from 'react'
 import './Stone.css'
 
 const Stone = ({ stone }) => {
-    console.log('stone.image in Stone: ', stone.image)
+
 
     return (
       <figure className="stone__card">

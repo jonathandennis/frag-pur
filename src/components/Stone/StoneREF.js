@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Stone.css'
 
-const Stone = ({ stones }) => {
+const StoneREF = ({ stones }) => {
   
     return (
         <section className="stone">
@@ -162,4 +162,4 @@ const Stone = ({ stones }) => {
     )
 }
 
-export default Stone
+export default StoneREF
