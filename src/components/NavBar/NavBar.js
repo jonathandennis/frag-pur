@@ -8,7 +8,6 @@ const NavBar = () => {
     window.onscroll = function() {myFunction()}
             
       const nav = document.querySelector(".nav")
-      console.log('nav: ', nav)
       const sticky = nav.offsetTop
             
       function myFunction() {

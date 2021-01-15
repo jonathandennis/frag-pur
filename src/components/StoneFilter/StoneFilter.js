@@ -1,27 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import StoneFilterListItem from '../StoneFilterListItem/StoneFilterListItem'
+import Stone from '../Stone/Stone'
 import checkboxesType from './checkboxesType'
 import checkboxesColor from './checkboxesColor'
 
 import './StoneFilter.css'
 
-const StoneFilter = ({ stoneType, setStoneType, stoneColor, setStoneColor }) => {
+const StoneFilter = ( stones, setCheckedColor, checkedColor ) => {
+  console.log('stones in StoneFilter: ', stones)
+  const [ filtersType, setFiltersType ] = useState([])
 
+  useEffect(() => {
+    const filterValues = [...new Set([ 'all', ...stones.map(n => n.type) ])]
+    setFiltersType(filterValues.map((n, i) => ({ active: false, value: n, id: i + 1 })))
+  }, [ stones ])
 
-  const handleTypeChange = event => {
-    setStoneType({
-      ...stoneType,
-      [event.target.value]: event.target.checked
-    })
-    console.log('checked types: ', stoneType)
-  }
+  const onFilterTypeChange = ({ target: { checked: active, dataset: { value } } }) => {
+    const
+      newFilters = filtersType.map(n => [ n.value, 'all' ].includes(value) ? { ...n, active } : n),
+      isAll = newFilters.filter(n => n.value !== 'all').every(n => n.active)
+
+    newFilters.find(n => n.value === 'all').active = isAll
+
+    setFiltersType(newFilters)
+  };
+
+  const
+    filteredTypes = filtersType.filter(n => n.active).map(n => n.value),
+    filteredStones = stones.filter(n => filteredTypes.includes(n.type));
 
   const handleColorChange = event => {
-    setStoneColor({
-      ...stoneColor,
+    setCheckedColor({
+      ...checkedColor,
       [event.target.value]: event.target.checked
     })
-    console.log('checked colors: ', stoneColor)
   }
 
 
@@ -29,19 +41,19 @@ const StoneFilter = ({ stoneType, setStoneType, stoneColor, setStoneColor }) => 
         <div className="stone__nav">
             <h2 className="stone__nav-head">Type</h2>
             <div className="stone__nav-list">
-              {checkboxesType.map(item => (
-                <label className="stone__nav-var" key={item.key}>
-                  {item.value}
-                  <StoneFilterListItem
-                    id={item.id}
-                    name={item.name}
-                    value={item.value}
-                    checked={stoneType[item.value]}
-                    onChange={handleTypeChange}
-                  />
+              {filtersType.map(n =>
+              <StoneFilterListItem
+                key={n.id}
+                {...n}
+                onChange={onFilterTypeChange}
+              />)}
                   <span className="checkmark"></span>
-                </label>
-              ))}
+              )
+              {filteredStones.map(n => 
+              <Stone
+                key={n.id}
+                {...n}
+              />)}
             </div>
             <h2 className="stone__nav-head">Couleur</h2>
             <div className="stone__nav-list">
@@ -50,9 +62,8 @@ const StoneFilter = ({ stoneType, setStoneType, stoneColor, setStoneColor }) => 
                   {item.value}
                   <StoneFilterListItem
                     id={item.id}
-                    name={item.name}
                     value={item.value}
-                    checked={stoneColor[item.value]}
+                    checked={checkedColor[item.value]}
                     onChange={handleColorChange}
                   />
                   <span className="checkmark"></span>
