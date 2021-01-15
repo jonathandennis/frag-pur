@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import StoneFilterListItem from '../StoneFilterListItem/StoneFilterListItem'
 import Stone from '../Stone/Stone'
-//import checkboxesColor from './checkboxesColor'
 
 import './StoneFilter.css'
 
