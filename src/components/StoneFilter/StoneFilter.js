@@ -1,76 +1,86 @@
 import React, { useEffect, useState } from 'react'
 import StoneFilterListItem from '../StoneFilterListItem/StoneFilterListItem'
 import Stone from '../Stone/Stone'
-import checkboxesType from './checkboxesType'
-import checkboxesColor from './checkboxesColor'
+//import checkboxesColor from './checkboxesColor'
 
 import './StoneFilter.css'
 
-const StoneFilter = ( stones, setCheckedColor, checkedColor ) => {
-  console.log('stones in StoneFilter: ', stones)
+const StoneFilter = ({ stones }) => {
+  //console.log('stones in StoneFilter: ', stones)
   const [ filtersType, setFiltersType ] = useState([])
+  const [ filtersColor, setFiltersColor ] = useState([])
 
+  ////////// Filter Type logic //////////
   useEffect(() => {
-    const filterValues = [...new Set([ 'all', ...stones.map(n => n.type) ])]
-    setFiltersType(filterValues.map((n, i) => ({ active: false, value: n, id: i + 1 })))
+    const filterValues = [...new Set([ 'all', ...stones.map(stone => stone.type) ])]
+    setFiltersType(filterValues.map((stone, i) => ({ active: true, value: stone, id: i + 1 })))
   }, [ stones ])
 
   const onFilterTypeChange = ({ target: { checked: active, dataset: { value } } }) => {
     const
-      newFilters = filtersType.map(n => [ n.value, 'all' ].includes(value) ? { ...n, active } : n),
-      isAll = newFilters.filter(n => n.value !== 'all').every(n => n.active)
+      newFilters = filtersType.map(stone => [ stone.value, 'all' ].includes(value) ? { ...stone, active } : stone),
+      isAll = newFilters.filter(stone => stone.value !== 'all').every(stone => stone.active)
 
-    newFilters.find(n => n.value === 'all').active = isAll
+    newFilters.find(stone => stone.value === 'all').active = isAll
 
     setFiltersType(newFilters)
-  };
+  }
+  ////////// END Filter Type logic //////////
+  ////////// Filter Color logic //////////
+  useEffect(() => {
+    const filterValues = [...new Set([ 'all', ...stones.map(stone => stone.color) ])]
+    setFiltersColor(filterValues.map((stone, i) => ({ active: false, value: stone, id: i + 1 })))
+  }, [ stones ])
+
+  const onFilterColorChange = ({ target: { checked: active, dataset: { value } } }) => {
+    const
+      newFilters = filtersColor.map(stone => [ stone.value, 'all' ].includes(value) ? { ...stone, active } : stone),
+      isAll = newFilters.filter(stone => stone.value !== 'all').every(stone => stone.active)
+
+    newFilters.find(stone => stone.value === 'all').active = isAll
+
+    setFiltersColor(newFilters)
+  } 
+  ////////// END Filter Color logic //////////
 
   const
-    filteredTypes = filtersType.filter(n => n.active).map(n => n.value),
-    filteredStones = stones.filter(n => filteredTypes.includes(n.type));
-
-  const handleColorChange = event => {
-    setCheckedColor({
-      ...checkedColor,
-      [event.target.value]: event.target.checked
-    })
-  }
-
+  filteredTypes = filtersType.filter(stone => stone.active).map(stone => stone.value),
+  filteredColors = filtersColor.filter(stone => stone.active).map(stone => stone.value),
+  filteredStones = stones.filter(stone => filteredTypes.includes(stone.type) || filteredColors.includes(stone.color))
 
     return (
+      <section className="stone">
         <div className="stone__nav">
             <h2 className="stone__nav-head">Type</h2>
             <div className="stone__nav-list">
-              {filtersType.map(n =>
+              {filtersType.map(stone =>
               <StoneFilterListItem
-                key={n.id}
-                {...n}
+                key={stone.id}
+                {...stone}
                 onChange={onFilterTypeChange}
               />)}
                   <span className="checkmark"></span>
-              )
-              {filteredStones.map(n => 
-              <Stone
-                key={n.id}
-                {...n}
-              />)}
             </div>
             <h2 className="stone__nav-head">Couleur</h2>
             <div className="stone__nav-list">
-              {checkboxesColor.map(item => (
-                <label className="stone__nav-var" key={item.key}>
-                  {item.value}
-                  <StoneFilterListItem
-                    id={item.id}
-                    value={item.value}
-                    checked={checkedColor[item.value]}
-                    onChange={handleColorChange}
-                  />
+              {filtersColor.map(stone =>
+              <StoneFilterListItem
+                key={stone.id}
+                {...stone}
+                onChange={onFilterColorChange}
+              />)}
                   <span className="checkmark"></span>
-                </label>
-              ))}
             </div>
         </div>
+            <div className="stone__carousel">
+              {filteredStones.map(stone => 
+              <Stone
+                stone={stone}
+                key={stone.id}
+                {...stone}
+              />)}
+            </div>
+      </section>       
     )
 }
 
