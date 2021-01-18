@@ -29,10 +29,12 @@ const Modal = ({ stone, isShowing, hide }) => isShowing ? ReactDOM.createPortal(
                       <p className="detail__type">{stone.thickness}</p> 
               </div>
               <div className="detail__thumbs">
-                  {/* <img src="img/materials/BiancoSivec2.jpg" class="detail__thumb" alt="BiancoSivec2">
-                  <img src="img/materials/BiancoSivec3.jpg" class="detail__thumb" alt="BiancoSivec3">
-                  <img src="img/materials/BiancoSivec4.jpg" class="detail__thumb" alt="BiancoSivec4">
-                  <img src="img/materials/BiancoSivec5.jpg" class="detail__thumb" alt="BiancoSivec5"> */}
+                  {stone.detail.map((imgSrc, i) => 
+                  (<img className="detail__thumb"
+                       src={`${process.env.PUBLIC_URL}/${imgSrc.image}`}
+                       key={i}
+                       alt={stone.name}
+                   />))}
               </div>
           </div>
         </div>

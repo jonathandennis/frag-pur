@@ -5,13 +5,13 @@
     z-index: 1040;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
-    opacity: .8;
+    background-color: #303030;
+    opacity: .98;
   }
 
   .modal-wrapper {
     position: fixed;
-    top: 0;
+    top: 1.5%;
     left: 0;
     z-index: 1050;
     width: 100%;
@@ -30,9 +30,9 @@
   }
 
 .detail__content {
-    height: 95vh;
+    height: 87vh;
     width: max-content;
-    padding: 1rem 1.5rem;
+    padding: .5rem 1.5rem;
     border: solid 2px;
     border-radius: 3px;
     border-color: #303030;
@@ -44,8 +44,8 @@
 }
 
 .detail__image {
-    height: 93%;
-    margin-bottom: .8rem;
+    height: 91%;
+    margin-bottom: .5rem;
 }
 
 .detail__img {
@@ -59,10 +59,11 @@
 .detail__text-box {
     height: 7%;
     width: 100%;
-    padding-top: .5rem;
+    padding: .5rem 0;
 
     display: flex;
     justify-content: space-between;
+    
 }
 
 .detail__name {
@@ -91,9 +92,12 @@
 }
 
 .detail__thumbs {
-    display: flex;   
+    display: flex;
+    background-color: #666666;
+ 
 }
 
 .detail__thumb {
     height: 4rem;
+    padding: .25rem;
 }
