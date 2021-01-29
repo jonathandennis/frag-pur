@@ -1,0 +1,28 @@
+.about {
+    background-color: #333333;
+    height: 85vh;
+    width: 100%;
+    padding: 5% 10% 5% 10%;
+}
+
+.about__header {
+    font-size: 3.4rem;
+    font-weight: 100;
+    font-family: 'Industry-Book', sans-serif;
+    text-transform: uppercase;
+    color: #a6a3a3;
+    margin-bottom: 2rem;
+}
+
+span {
+    color: #555555;
+}
+
+.about__text {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    font-family: 'Helvetica', sans-serif;
+    color: #a6a3a3;
+    letter-spacing: .05rem;
+}

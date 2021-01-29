@@ -1,0 +1,241 @@
+{
+    "stones": [
+        {
+            "id": 1,
+            "important": true,
+            "name": "Bianco Sivec",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/BiancoSivec1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/BiancoSivec2.jpg"},
+                {"image": "assets/img/stone/BiancoSivec3.jpg"},
+                {"image": "assets/img/stone/BiancoSivec4.jpg"},
+                {"image": "assets/img/stone/BiancoSivec5.jpg"}
+            ]
+        },
+        {
+            "id": 2,
+            "important": true,
+            "name": "Imperial White",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/ImperialWhite1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/ImperialWhite2.jpg"},
+                {"image": "assets/img/stone/ImperialWhite3.jpg"},
+                {"image": "assets/img/stone/ImperialWhite4.jpg"},
+                {"image": "assets/img/stone/ImperialWhite5.jpg"},
+                {"image": "assets/img/stone/ImperialWhite6.jpg"},
+                {"image": "assets/img/stone/ImperialWhite7.jpg"},
+                {"image": "assets/img/stone/ImperialWhite8.jpg"}
+            ]
+        },
+        {
+            "id": 3,
+            "important": true,
+            "name": "Fantasy White",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/FantasyWhite1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/FantasyWhite2.jpg"},
+                {"image": "assets/img/stone/FantasyWhite3.jpg"},
+                {"image": "assets/img/stone/FantasyWhite4.jpg"},
+                {"image": "assets/img/stone/FantasyWhite5.jpg"},
+                {"image": "assets/img/stone/FantasyWhite6.jpg"},
+                {"image": "assets/img/stone/FantasyWhite7.jpg"},
+                {"image": "assets/img/stone/FantasyWhite8.jpg"}
+            ]
+        },
+        {
+            "id": 4,
+            "important": true,
+            "name": "Infinito",
+            "type": "Marbre",
+            "color": "Blanc",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/Infinito1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/Infinito2.jpg"},
+                {"image": "assets/img/stone/Infinito3.jpg"},
+                {"image": "assets/img/stone/Infinito4.jpg"},
+                {"image": "assets/img/stone/Infinito5.jpg"},
+                {"image": "assets/img/stone/Infinito6.jpg"},
+                {"image": "assets/img/stone/Infinito7.jpg"},
+                {"image": "assets/img/stone/Infinito8.jpg"}
+            ]
+        },
+        {
+            "id": 5,
+            "important": true,
+            "name": "Fantasy Gold",
+            "type": "Marbre",
+            "color": "Beige",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/FatasyGold1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/FatasyGold2.jpg"},
+                {"image": "assets/img/stone/FatasyGold3.jpg"},
+                {"image": "assets/img/stone/FatasyGold4.jpg"},
+                {"image": "assets/img/stone/FatasyGold5.jpg"},
+                {"image": "assets/img/stone/FatasyGold6.jpg"},
+                {"image": "assets/img/stone/FatasyGold7.jpg"},
+                {"image": "assets/img/stone/FatasyGold8.jpg"}
+            ]
+        },
+        {
+            "id": 6,
+            "important": true,
+            "name": "Labareda",
+            "type": "Quartz",
+            "color": "Multi",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/Labareda1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/Labareda2.jpg"},
+                {"image": "assets/img/stone/Labareda3.jpg"},
+                {"image": "assets/img/stone/Labareda4.jpg"},
+                {"image": "assets/img/stone/Labareda5.jpg"},
+                {"image": "assets/img/stone/Labareda6.jpg"},
+                {"image": "assets/img/stone/Labareda7.jpg"},
+                {"image": "assets/img/stone/Labareda8.jpg"}
+            ]
+        },
+        {
+            "id": 7,
+            "important": true,
+            "name": "Honey Blue",
+            "type": "Granit",
+            "color": "Bleu",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/HoneyBlue1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/HoneyBlue2.jpg"},
+                {"image": "assets/img/stone/HoneyBlue3.jpg"},
+                {"image": "assets/img/stone/HoneyBlue4.jpg"},
+                {"image": "assets/img/stone/HoneyBlue5.jpg"},
+                {"image": "assets/img/stone/HoneyBlue6.jpg"},
+                {"image": "assets/img/stone/HoneyBlue7.jpg"},
+                {"image": "assets/img/stone/HoneyBlue8.jpg"}
+            ]
+        },
+        {
+            "id": 8,
+            "important": true,
+            "name": "Black Taurus",
+            "type": "Granit",
+            "color": "Noir",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/BlackTaurus1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/BlackTaurus2.jpg"},
+                {"image": "assets/img/stone/BlackTaurus3.jpg"},
+                {"image": "assets/img/stone/BlackTaurus4.jpg"},
+                {"image": "assets/img/stone/BlackTaurus5.jpg"},
+                {"image": "assets/img/stone/BlackTaurus6.jpg"},
+                {"image": "assets/img/stone/BlackTaurus7.jpg"},
+                {"image": "assets/img/stone/BlackTaurus8.jpg"}
+            ]
+        },
+        {
+            "id": 9,
+            "important": true,
+            "name": "Lavender",
+            "type": "Onyx",
+            "color": "Bleu",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/Lavender1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/Lavender2.jpg"},
+                {"image": "assets/img/stone/Lavender3.jpg"},
+                {"image": "assets/img/stone/Lavender4.jpg"},
+                {"image": "assets/img/stone/Lavender5.jpg"},
+                {"image": "assets/img/stone/Lavender6.jpg"},
+                {"image": "assets/img/stone/Lavender7.jpg"},
+                {"image": "assets/img/stone/Lavender8.jpg"}
+            ]
+        },
+        {
+            "id": 10,
+            "important": true,
+            "name": "Mercury Black",
+            "type": "Travertin",
+            "color": "Noir",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/MercuryBlack1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/MercuryBlack2.jpg"},
+                {"image": "assets/img/stone/MercuryBlack3.jpg"},
+                {"image": "assets/img/stone/MercuryBlack4.jpg"},
+                {"image": "assets/img/stone/MercuryBlack5.jpg"},
+                {"image": "assets/img/stone/MercuryBlack6.jpg"},
+                {"image": "assets/img/stone/MercuryBlack7.jpg"},
+                {"image": "assets/img/stone/MercuryBlack8.jpg"}
+            ]
+        },
+        {
+            "id": 11,
+            "important": true,
+            "name": "Mount Ranier",
+            "type": "Quartz",
+            "color": "Beige",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/MountRanier1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/MountRanier2.jpg"},
+                {"image": "assets/img/stone/MountRanier3.jpg"},
+                {"image": "assets/img/stone/MountRanier4.jpg"},
+                {"image": "assets/img/stone/MountRanier5.jpg"},
+                {"image": "assets/img/stone/MountRanier6.jpg"},
+                {"image": "assets/img/stone/MountRanier7.jpg"},
+                {"image": "assets/img/stone/MountRanier8.jpg"}
+            ]
+        },
+        {
+            "id": 12,
+            "important": true,
+            "name": "Red Multicolor",
+            "type": "Travertin",
+            "color": "Rouge",
+            "origin": "Macédoine",
+            "finish": "Poli",
+            "thickness": "3cm, 2cm",
+            "image": "assets/img/stone/RedMulticolor1.jpg",
+            "detail": [
+                {"image": "assets/img/stone/RedMulticolor2.jpg"},
+                {"image": "assets/img/stone/RedMulticolor3.jpg"},
+                {"image": "assets/img/stone/RedMulticolor4.jpg"},
+                {"image": "assets/img/stone/RedMulticolor5.jpg"},
+                {"image": "assets/img/stone/RedMulticolor6.jpg"},
+                {"image": "assets/img/stone/RedMulticolor7.jpg"},
+                {"image": "assets/img/stone/RedMulticolor8.jpg"}
+            ]
+        }
+    ]
+}

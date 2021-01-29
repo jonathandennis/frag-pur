@@ -1,0 +1,9 @@
+.appContainer {
+  max-width: 192rem;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
