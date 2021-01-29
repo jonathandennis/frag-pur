@@ -21,6 +21,7 @@
     list-style-type: none;
     backface-visibility: hidden;
     transition: all .3s;
+    text-decoration: none;
 }
 
 .nav__link, .nav__link:visited {

@@ -9,7 +9,7 @@ import axios from 'axios'
 
 import './App.css'
 
-import { Route, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 const App = () => {
   const [stones, setStones] = useState([])
@@ -50,12 +50,16 @@ const App = () => {
   return (
     <div className="appContainer">
       <Header />
+      {/* <Route exact path="/" component={Header} /> */}
       <NavBar />
-        <Route exact path="/" component={About} />
-        <Route exact path="/">
-          <StoneFilter stones={stones} />
-        </Route>
-        <Route exact path="/" component={Contact} />
+      {/* <Route exact path="/" component={About} /> */}
+      <About />
+      {/* <Route exact path="/">
+        <StoneFilter stones={stones} />
+      </Route> */}
+      <StoneFilter stones={stones} />
+      {/* <Route exact path="/" component={Contact} /> */}
+      <Contact />
     </div>
   )
 }

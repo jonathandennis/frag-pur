@@ -24,7 +24,8 @@ const NavBar = () => {
     return (
         <nav className="nav">
           <ul className="nav__list">
-            <li className="nav__item"><a href="#post1" className="nav__link">Start</a></li>
+            {/* <li className="nav__item"><a href="#post1" className="nav__link">Start</a></li> */}
+            <Link to="/#home" className="nav__item">Home</Link>
             <Link to="/#about" className="nav__item">About Us</Link>
             <Link to="/#stones" className="nav__item">Stones</Link>
             <Link to="/#contact" className="nav__item">Contact</Link>
