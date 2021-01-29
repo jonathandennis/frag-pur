@@ -1,4 +1,7 @@
-const http = require('http')
+const express = require('express')
+const app = express()
+
+app.use(express.json())
 
 let stones = [
     {
@@ -59,10 +62,79 @@ let stones = [
         ]
     }
   ]
-  const app = http.createServer((request, response) => {
-    response.writeHead(200, { 'Content-Type': 'application/json' })
-    response.end(JSON.stringify(stones))
+
+  const requestLogger = (request, response, next) => {
+    console.log('Method:', request.method)
+    console.log('Path:  ', request.path)
+    console.log('Body:  ', request.body)
+    console.log('---')
+    next()
+  }
+
+  app.use(requestLogger)
+
+  app.get('/api/stones', (request, response) => {
+    response.json(stones)
   })
+
+  app.get('/api/stones/:id', (request, response) => {
+    const id = Number(request.params.id)
+    const stone = stones.find(stone => stone.id === id)
+    response.json(stone)
+
+    if (stone) {
+      response.json(stone)
+    } else {
+      response.status(404).end()    
+    }
+  })
+
+  const generateId = () => {
+    const maxId = stones.length > 0
+      ? Math.max(...stones.map(s => s.id))
+      : 0
+    return maxId + 1
+  }
+
+  app.post('/api/stones', (request, response) => {
+    const body = request.body
+    
+    if (!body.name) {
+        return response.status(400).json({ 
+          error: 'content missing' 
+        })
+      }
+    
+      const stone = {
+        id: generateId(),
+        important: body.important || false,
+        name: body.name,
+        type: body.type,
+        color: body.color,
+        origin: body.origin,
+        finish: body.finish,
+        thickness: body.thickness,
+        image: body.image,
+        detail: body.detail,
+      }
+    
+      stones = stones.concat(stone)
+    
+      response.json(stone)
+  })
+
+  app.delete('/api/stones/:id', (request, response) => {
+    const id = Number(request.params.id)
+    stones = stones.filter(stone => stone.id !== id)
+  
+    response.status(204).end()
+  })
+
+  const unknownEndpoint = (request, response) => {
+    response.status(404).send({ error: 'unknown endpoint' })
+  }
+  
+  app.use(unknownEndpoint)
   
   const PORT = 3001
   app.listen(PORT)
