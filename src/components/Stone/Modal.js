@@ -14,6 +14,12 @@ const Modal = ({ stone, isShowing, hide }) => isShowing ? ReactDOM.createPortal(
               src={`${process.env.PUBLIC_URL}/${stone.image}`}
               alt={stone.name}
               />
+            {/* {stone.detail.map((imgSrc, i) => 
+                  (<img className="detail__img"
+                       src={`${process.env.PUBLIC_URL}/${imgSrc.image}`}
+                       key={i}
+                       alt={stone.name}
+                   />))} */}
           </div>
           <div className="detail__text-box">
               <div className="detail__name">

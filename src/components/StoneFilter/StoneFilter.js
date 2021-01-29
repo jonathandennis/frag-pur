@@ -48,7 +48,7 @@ const StoneFilter = ({ stones }) => {
   filteredStones = stones.filter(stone => filteredTypes.includes(stone.type) || filteredColors.includes(stone.color))
 
     return (
-      <section className="stone">
+      <section id="stones" className="stone">
         <div className="stone__nav">
             <h2 className="stone__nav-head">Type</h2>
             <div className="stone__nav-list">

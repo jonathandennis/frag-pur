@@ -9,8 +9,12 @@ import axios from 'axios'
 
 import './App.css'
 
+import { Route, useLocation } from 'react-router-dom'
+
 const App = () => {
   const [stones, setStones] = useState([])
+  const { pathname, hash } = useLocation()
+
 
   useEffect(() => {
     console.log('effect');
@@ -23,13 +27,35 @@ const App = () => {
   }, [])
   console.log('render', stones.length, 'stones')
 
+  useEffect(() => {
+    // if not a hash link scroll to top
+    if(hash===''){
+        window.scrollTo(0, 0)
+    }
+    // else scroll to id
+    else{
+        setTimeout(
+            () => {
+                const id = hash.replace('#', '');
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView();
+                }
+            },
+            0
+        );
+    }
+}, [hash, pathname]) // do this on route change
+
   return (
     <div className="appContainer">
       <Header />
       <NavBar />
-      <About />
-      <StoneFilter stones={stones} />
-      <Contact />
+        <Route exact path="/" component={About} />
+        <Route exact path="/">
+          <StoneFilter stones={stones} />
+        </Route>
+        <Route exact path="/" component={Contact} />
     </div>
   )
 }

@@ -5,7 +5,7 @@ import './Contact.css'
 const Contact = () => {
 
     return (
-        <section className="contact"> 
+        <section id="contact" className="contact"> 
             <div className="contact__text-box">
                 <img src={`${process.env.PUBLIC_URL}/assets/img/FP-13_wht.png`} className="contact__logo" alt="Fragment Pur logo" />
                 <h3 className="contact__address">
