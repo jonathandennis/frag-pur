@@ -1,13 +1,16 @@
 import axios from 'axios'
-const baseUrl = '/api/stones'
-
-const promise = axios.get('http://localhost:3001/stones')
-console.log(promise)
+const baseUrl = 'http://localhost:3001/api/stones'
 
 
 const getAll = () => {
     const request = axios.get(baseUrl)
+    console.log('request: ', request)
     return request.then(response => response.data)
 }
 
-export default getAll
+const create = newObject => {
+    const request = axios.post(baseUrl, newObject)
+    return request.then(response => response.data)
+  }
+
+export default { getAll, create }

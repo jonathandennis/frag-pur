@@ -4,28 +4,29 @@ import NavBar from '../NavBar/NavBar'
 import About from '../About/About'
 import StoneFilter from '../StoneFilter/StoneFilter'
 import Contact from '../Contact/Contact'
-/* import stoneService from '../../services/stones' */
-import axios from 'axios'
+import stoneService from '../../services/stones'
+//import axios from 'axios'
 
 import './App.css'
 
 import { useLocation } from 'react-router-dom'
 
+
 const App = () => {
   const [stones, setStones] = useState([])
   const { pathname, hash } = useLocation()
+  console.log('stones: ', stones)
 
 
   useEffect(() => {
-    console.log('effect');
-    axios
-    .get('http://localhost:3001/stones')
+    stoneService
+    .getAll()
     .then(response => {
-      console.log('promise fulfilled')
-      setStones(response.data)
+      console.log('App response: ', response)
+      setStones(response)
       })
   }, [])
-  console.log('render', stones.length, 'stones')
+  //console.log('render', stones.length, 'stones')
 
   useEffect(() => {
     // if not a hash link scroll to top
