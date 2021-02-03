@@ -1,3 +1,4 @@
 DELETE http://localhost:3001/api/stones/2
 
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpZCI6IjYwMTkwY2MwYjM1ODAzODRmM2YwMzAxZSIsImlhdCI6MTYxMjI1NDU5Mn0.aPx16l5WiXIDDtnApSi6szD8aFzzay_yE_idR-R-QxQ

@@ -27,6 +27,7 @@ stonesRouter.delete('/:id', async (request, response) => {
 })
 
 stonesRouter.post('/', async (request, response) => {
+  console.log('request.body: ', request.body)
   const body = request.body
   const decodedToken = jwt.verify(request.token, process.env.SECRET)
   if (!request.token || !decodedToken.id) {

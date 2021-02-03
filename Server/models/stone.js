@@ -23,7 +23,7 @@ const stoneSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  detail: [String],
+  detail: [{ image: String }],
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
