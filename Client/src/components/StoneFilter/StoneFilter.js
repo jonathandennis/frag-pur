@@ -5,7 +5,6 @@ import Stone from '../Stone/Stone'
 import './StoneFilter.css'
 
 const StoneFilter = ({ stones }) => {
-  //console.log('stones in StoneFilter: ', stones)
   const [ filtersType, setFiltersType ] = useState([])
   const [ filtersColor, setFiltersColor ] = useState([])
 
@@ -24,7 +23,6 @@ const StoneFilter = ({ stones }) => {
 
     setFiltersType(newFilters)
   }
-  ////////// END Filter Type logic //////////
   ////////// Filter Color logic //////////
   useEffect(() => {
     const filterValues = [...new Set([ 'all', ...stones.map(stone => stone.color) ])]
@@ -39,8 +37,7 @@ const StoneFilter = ({ stones }) => {
     newFilters.find(stone => stone.value === 'all').active = isAll
 
     setFiltersColor(newFilters)
-  } 
-  ////////// END Filter Color logic //////////
+  }
 
   const
   filteredTypes = filtersType.filter(stone => stone.active).map(stone => stone.value),

@@ -5,18 +5,15 @@ import About from '../About/About'
 import StoneFilter from '../StoneFilter/StoneFilter'
 import Contact from '../Contact/Contact'
 import stoneService from '../../services/stones'
-//import axios from 'axios'
 
 import './App.css'
 
 import { useLocation } from 'react-router-dom'
 
-
 const App = () => {
   const [stones, setStones] = useState([])
   const { pathname, hash } = useLocation()
   console.log('stones: ', stones)
-
 
   useEffect(() => {
     stoneService
@@ -51,15 +48,9 @@ const App = () => {
   return (
     <div className="appContainer">
       <Header />
-      {/* <Route exact path="/" component={Header} /> */}
       <NavBar />
-      {/* <Route exact path="/" component={About} /> */}
       <About />
-      {/* <Route exact path="/">
-        <StoneFilter stones={stones} />
-      </Route> */}
       <StoneFilter stones={stones} />
-      {/* <Route exact path="/" component={Contact} /> */}
       <Contact />
     </div>
   )
