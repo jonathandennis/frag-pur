@@ -43,6 +43,7 @@ stonesRouter.post('/', async (request, response) => {
     origin: body.origin,
     finish: body.finish,
     thickness: body.thickness,
+    dimension: body.dimension,
     image: body.image,
     detail: body.detail,
     user: user,
@@ -65,6 +66,7 @@ stonesRouter.put('/:id', async (request, response) => {
     origin: body.origin,
     finish: body.finish,
     thickness: body.thickness,
+    dimension: body.dimension,
     image: body.image,
     detail: body.detail,
   }

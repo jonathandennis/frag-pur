@@ -1,22 +1,26 @@
 POST http://localhost:3001/api/stones
 Content-Type: application/json 
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpZCI6IjYwMTkwY2MwYjM1ODAzODRmM2YwMzAxZSIsImlhdCI6MTYxMjI1NDU5Mn0.aPx16l5WiXIDDtnApSi6szD8aFzzay_yE_idR-R-QxQ
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2MDFhNzBjNGIzYWE2OWFjNzkwZDVkNWEiLCJpYXQiOjE2MTIzNDU2ODR9.WQvPzlW9dx7qrr9Nr82F7lXltH42nISl-y76fOunBaQ
 
 {
-       "name": "Labareda",
-       "type": "Quartz",
-       "color": "Multi",
-       "origin": "Macédoine",
+       "name": "Taj Mahaj",
+       "type": "Travertin",
+       "color": "Rose",
+       "origin": "Brésil",
        "finish": "Poli",
-       "thickness": "3cm, 2cm",
-       "image": "assets/img/stone/Labareda1.jpg",
+       "thickness": "2cm, 3cm",
+       "dimension": "334x197",
+       "image": "assets/img/stone/travertin/TajMahaj1.jpg",
        "detail": [
-           {"image": "assets/img/stone/Labareda2.jpg"},
-           {"image": "assets/img/stone/Labareda3.jpg"},
-           {"image": "assets/img/stone/Labareda4.jpg"},
-           {"image": "assets/img/stone/Labareda5.jpg"},
-           {"image": "assets/img/stone/Labareda6.jpg"},
-           {"image": "assets/img/stone/Labareda7.jpg"},
-           {"image": "assets/img/stone/Labareda8.jpg"}
+           {"image": "assets/img/stone/travertin/TajMahaj3.jpg"},
+           {"image": "assets/img/stone/travertin/TajMahaj4.jpg"},
+           {"image": "assets/img/stone/travertin/TajMahaj5.jpg"},
+           {"image": "assets/img/stone/travertin/TajMahaj6.jpg"},
+           {"image": "assets/img/stone/travertin/TajMahaj7.jpg"},
+           {"image": "assets/img/stone/travertin/TajMahaj8.jpg"}
        ]
 }
+
+//admin: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2MDFhNzBjNGIzYWE2OWFjNzkwZDVkNWEiLCJpYXQiOjE2MTIzNDU2ODR9.WQvPzlW9dx7qrr9Nr82F7lXltH42nISl-y76fOunBaQ
+
+//test: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpZCI6IjYwMTkwY2MwYjM1ODAzODRmM2YwMzAxZSIsImlhdCI6MTYxMjI1NDU5Mn0.aPx16l5WiXIDDtnApSi6szD8aFzzay_yE_idR-R-QxQ

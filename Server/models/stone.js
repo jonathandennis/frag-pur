@@ -19,18 +19,19 @@ const stoneSchema = mongoose.Schema({
   origin: String,
   finish: String,
   thickness: String,
+  dimension: String,
   image: {
     type: String,
     required: true,
   },
-  detail: [{ image: String }],
+  detail: [
+    {
+      image: String
+    },
+  ],
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
-  },
-  likes: {
-    type: Number,
-    required: false,
   },
   important: Boolean,
 })
