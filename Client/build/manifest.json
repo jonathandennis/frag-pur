@@ -1,0 +1,40 @@
+{
+  "short_name": "Fragment Pur",
+  "name": "The Fragment Pur Website",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "android-chrome-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "mstile-150x150.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "safari-pinned-tab.svg",
+      "type": "image/svg",
+      "color": "#333333"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#333333",
+  "background_color": "#ffffff"
+}
