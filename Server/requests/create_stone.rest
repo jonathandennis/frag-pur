@@ -3,21 +3,21 @@ Content-Type: application/json
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2MDFhNzBjNGIzYWE2OWFjNzkwZDVkNWEiLCJpYXQiOjE2MTIzNDU2ODR9.WQvPzlW9dx7qrr9Nr82F7lXltH42nISl-y76fOunBaQ
 
 {
-       "name": "Taj Mahaj",
-       "type": "Travertin",
-       "color": "Rose",
-       "origin": "Brésil",
+       "name": "Azul Novae",
+       "type": "Granit",
+       "color": "Beige",
+       "origin": "Inde",
        "finish": "Poli",
        "thickness": "2cm, 3cm",
-       "dimension": "334x197",
-       "image": "assets/img/stone/travertin/TajMahaj1.jpg",
+       "dimension": "301x183",
+       "image": "assets/img/stone/granit/clairs/AzulNovae1.jpg",
        "detail": [
-           {"image": "assets/img/stone/travertin/TajMahaj3.jpg"},
-           {"image": "assets/img/stone/travertin/TajMahaj4.jpg"},
-           {"image": "assets/img/stone/travertin/TajMahaj5.jpg"},
-           {"image": "assets/img/stone/travertin/TajMahaj6.jpg"},
-           {"image": "assets/img/stone/travertin/TajMahaj7.jpg"},
-           {"image": "assets/img/stone/travertin/TajMahaj8.jpg"}
+           {"image": "assets/img/stone/granit/clairs/AzulNovae3.jpg"},
+           {"image": "assets/img/stone/granit/clairs/AzulNovae4.jpg"},
+           {"image": "assets/img/stone/granit/clairs/AzulNovae5.jpg"},
+           {"image": "assets/img/stone/granit/clairs/AzulNovae6.jpg"},
+           {"image": "assets/img/stone/granit/clairs/AzulNovae7.jpg"},
+           {"image": "assets/img/stone/granit/clairs/AzulNovae8.jpg"}
        ]
 }
 
