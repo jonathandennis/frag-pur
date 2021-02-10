@@ -3,21 +3,21 @@ Content-Type: application/json
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2MDFhNzBjNGIzYWE2OWFjNzkwZDVkNWEiLCJpYXQiOjE2MTIzNDU2ODR9.WQvPzlW9dx7qrr9Nr82F7lXltH42nISl-y76fOunBaQ
 
 {
-       "name": "Azul Novae",
+       "name": "Bianco Typhoon",
        "type": "Granit",
-       "color": "Beige",
+       "color": "Gris",
        "origin": "Inde",
        "finish": "Poli",
        "thickness": "2cm, 3cm",
-       "dimension": "301x183",
-       "image": "assets/img/stone/granit/clairs/AzulNovae1.jpg",
+       "dimension": "333x190",
+       "image": "assets/img/stone/granit/clairs/BiancoTyphoon1.jpg",
        "detail": [
-           {"image": "assets/img/stone/granit/clairs/AzulNovae3.jpg"},
-           {"image": "assets/img/stone/granit/clairs/AzulNovae4.jpg"},
-           {"image": "assets/img/stone/granit/clairs/AzulNovae5.jpg"},
-           {"image": "assets/img/stone/granit/clairs/AzulNovae6.jpg"},
-           {"image": "assets/img/stone/granit/clairs/AzulNovae7.jpg"},
-           {"image": "assets/img/stone/granit/clairs/AzulNovae8.jpg"}
+           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon3.jpg"},
+           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon4.jpg"},
+           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon5.jpg"},
+           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon6.jpg"},
+           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon7.jpg"},
+           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon8.jpg"}
        ]
 }
 
