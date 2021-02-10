@@ -3,21 +3,21 @@ Content-Type: application/json
 Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2MDFhNzBjNGIzYWE2OWFjNzkwZDVkNWEiLCJpYXQiOjE2MTIzNDU2ODR9.WQvPzlW9dx7qrr9Nr82F7lXltH42nISl-y76fOunBaQ
 
 {
-       "name": "Bianco Typhoon",
+       "name": "Colonial Cream",
        "type": "Granit",
-       "color": "Gris",
+       "color": "Beige",
        "origin": "Inde",
        "finish": "Poli",
        "thickness": "2cm, 3cm",
-       "dimension": "333x190",
-       "image": "assets/img/stone/granit/clairs/BiancoTyphoon1.jpg",
+       "dimension": "220x183",
+       "image": "assets/img/stone/granit/clairs/ColonialCream1.jpg",
        "detail": [
-           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon3.jpg"},
-           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon4.jpg"},
-           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon5.jpg"},
-           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon6.jpg"},
-           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon7.jpg"},
-           {"image": "assets/img/stone/granit/clairs/BiancoTyphoon8.jpg"}
+           {"image": "assets/img/stone/granit/clairs/ColonialCream3.jpg"},
+           {"image": "assets/img/stone/granit/clairs/ColonialCream4.jpg"},
+           {"image": "assets/img/stone/granit/clairs/ColonialCream5.jpg"},
+           {"image": "assets/img/stone/granit/clairs/ColonialCream6.jpg"},
+           {"image": "assets/img/stone/granit/clairs/ColonialCream7.jpg"},
+           {"image": "assets/img/stone/granit/clairs/ColonialCream8.jpg"}
        ]
 }
 
